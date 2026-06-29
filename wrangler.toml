@@ -1,0 +1,10 @@
+name = "rawclimb"
+compatibility_date = "2026-06-29"
+main = ".open-next/worker.js"
+
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "rawclimb-db"
+database_id = "545b14ca-88d2-4651-9e19-c79143a5428d"

@@ -1,0 +1,3 @@
+module.exports=[37728,a=>{"use strict";var b=a.i(7997);a.s(["default",0,function(){return(0,b.jsx)("div",{className:"min-h-screen bg-black px-6 py-10 text-white",children:(0,b.jsx)("div",{className:"mx-auto max-w-7xl",children:(0,b.jsx)("p",{className:"text-zinc-400",children:"Loading routes..."})})})}])},98153,a=>{a.n(a.i(37728))}];
+
+//# sourceMappingURL=src_app_routes_loading_tsx_0x1j3zo._.js.map

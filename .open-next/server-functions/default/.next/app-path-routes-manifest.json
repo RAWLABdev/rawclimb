@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/areas/[slug]/page": "/areas/[slug]",
+  "/areas/page": "/areas",
+  "/ascents/page": "/ascents",
+  "/dashboard/page": "/dashboard",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/profile/page": "/profile",
+  "/routes/[id]/page": "/routes/[id]",
+  "/routes/page": "/routes"
+}

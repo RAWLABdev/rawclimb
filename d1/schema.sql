@@ -1,0 +1,60 @@
+CREATE TABLE IF NOT EXISTS countries (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  public_id TEXT UNIQUE NOT NULL,
+  name TEXT NOT NULL,
+  code TEXT NOT NULL,
+  created_at TEXT DEFAULT CURRENT_TIMESTAMP,
+  updated_at TEXT DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS climbing_areas (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  public_id TEXT UNIQUE NOT NULL,
+  country_id INTEGER,
+  name TEXT NOT NULL,
+  description TEXT,
+  image_path TEXT,
+  latitude REAL,
+  longitude REAL,
+  created_at TEXT DEFAULT CURRENT_TIMESTAMP,
+  updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY(country_id) REFERENCES countries(id)
+);
+
+CREATE TABLE IF NOT EXISTS climbing_zones (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  public_id TEXT UNIQUE NOT NULL,
+  area_id INTEGER NOT NULL,
+  name TEXT NOT NULL,
+  image_path TEXT,
+  created_at TEXT DEFAULT CURRENT_TIMESTAMP,
+  updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY(area_id) REFERENCES climbing_areas(id)
+);
+
+CREATE TABLE IF NOT EXISTS climbing_routes (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  public_id TEXT UNIQUE NOT NULL,
+  zone_id INTEGER NOT NULL,
+  name TEXT NOT NULL,
+  type TEXT NOT NULL,
+  grade TEXT NOT NULL,
+  created_at TEXT DEFAULT CURRENT_TIMESTAMP,
+  updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY(zone_id) REFERENCES climbing_zones(id)
+);
+
+CREATE TABLE IF NOT EXISTS climbing_ascents (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  public_id TEXT UNIQUE NOT NULL,
+  route_id INTEGER NOT NULL,
+  user_id TEXT,
+  type TEXT NOT NULL,
+  date TEXT NOT NULL,
+  rating INTEGER,
+  grade TEXT NOT NULL,
+  notes TEXT,
+  created_at TEXT DEFAULT CURRENT_TIMESTAMP,
+  updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY(route_id) REFERENCES climbing_routes(id)
+);
