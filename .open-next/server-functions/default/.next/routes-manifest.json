@@ -23,12 +23,12 @@
   },
   "dynamicRoutes": [
     {
-      "page": "/areas/[slug]",
+      "page": "/areas/[id]",
       "regex": "^/areas/([^/]+?)(?:/)?$",
       "routeKeys": {
-        "nxtPslug": "nxtPslug"
+        "nxtPid": "nxtPid"
       },
-      "namedRegex": "^/areas/(?<nxtPslug>[^/]+?)(?:/)?$"
+      "namedRegex": "^/areas/(?<nxtPid>[^/]+?)(?:/)?$"
     },
     {
       "page": "/routes/[id]",
@@ -37,6 +37,14 @@
         "nxtPid": "nxtPid"
       },
       "namedRegex": "^/routes/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/zones/[id]",
+      "regex": "^/zones/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/zones/(?<nxtPid>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [

@@ -2,7 +2,7 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/api/areas/route": "/api/areas",
-  "/areas/[slug]/page": "/areas/[slug]",
+  "/areas/[id]/page": "/areas/[id]",
   "/areas/page": "/areas",
   "/ascents/page": "/ascents",
   "/dashboard/page": "/dashboard",
@@ -10,5 +10,6 @@
   "/page": "/",
   "/profile/page": "/profile",
   "/routes/[id]/page": "/routes/[id]",
-  "/routes/page": "/routes"
+  "/routes/page": "/routes",
+  "/zones/[id]/page": "/zones/[id]"
 }
