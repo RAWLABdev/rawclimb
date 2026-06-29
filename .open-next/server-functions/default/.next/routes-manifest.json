@@ -59,6 +59,12 @@
       "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
+      "page": "/api/areas",
+      "regex": "^/api/areas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/areas(?:/)?$"
+    },
+    {
       "page": "/areas",
       "regex": "^/areas(?:/)?$",
       "routeKeys": {},

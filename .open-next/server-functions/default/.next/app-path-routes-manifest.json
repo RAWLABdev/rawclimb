@@ -1,6 +1,7 @@
 {
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
+  "/api/areas/route": "/api/areas",
   "/areas/[slug]/page": "/areas/[slug]",
   "/areas/page": "/areas",
   "/ascents/page": "/ascents",
