@@ -2,24 +2,18 @@ import Link from "next/link";
 
 export const navigation = [
   {
-    title: "Home",
-    href: "/",
-  },
-  {
-    title: "Dashboard",
-    href: "/dashboard",
-  },
-  {
-    title: "Areas",
+    title: "Explore",
     href: "/areas",
   },
+
   {
     title: "Routes",
     href: "/routes",
   },
+
   {
-    title: "Ascents",
-    href: "/ascents",
+    title: "Dashboard",
+    href: "/dashboard",
   },
 ];
 
