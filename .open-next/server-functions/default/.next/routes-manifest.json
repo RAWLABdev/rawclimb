@@ -23,6 +23,14 @@
   },
   "dynamicRoutes": [
     {
+      "page": "/api/routes/[id]/ascents",
+      "regex": "^/api/routes/([^/]+?)/ascents(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/routes/(?<nxtPid>[^/]+?)/ascents(?:/)?$"
+    },
+    {
       "page": "/areas/[id]",
       "regex": "^/areas/([^/]+?)(?:/)?$",
       "routeKeys": {

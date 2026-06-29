@@ -2,6 +2,7 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/api/areas/route": "/api/areas",
+  "/api/routes/[id]/ascents/route": "/api/routes/[id]/ascents",
   "/areas/[id]/page": "/areas/[id]",
   "/areas/page": "/areas",
   "/ascents/page": "/ascents",
