@@ -15,6 +15,10 @@ export const navigation = [
     title: "Dashboard",
     href: "/dashboard",
   },
+  {
+  title: "Sessions",
+  href: "/sessions",
+},
 ];
 
 export function MainNav() {

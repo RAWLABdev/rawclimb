@@ -1,20 +1,20 @@
 import { ReactNode } from "react";
-import { Header } from "./Header";
+import { Sidebar } from "@/components/navigation/Sidebar";
 
-interface Props {
+interface AppShellProps {
   children: ReactNode;
 }
 
-export function AppShell({
-  children,
-}: Props) {
+export function AppShell({ children }: AppShellProps) {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <Header />
+    <main className="min-h-screen bg-black text-white lg:flex">
+      <Sidebar />
 
-      <main className="mx-auto max-w-7xl px-6 py-10">
-        {children}
-      </main>
-    </div>
+      <section className="w-full flex-1">
+        <div className="mx-auto max-w-5xl px-6 py-8 lg:px-12 lg:py-12">
+          {children}
+        </div>
+      </section>
+    </main>
   );
 }
